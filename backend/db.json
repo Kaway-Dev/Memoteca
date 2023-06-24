@@ -8,8 +8,8 @@
     },
     {
       "id": 2,
-      "conteudo": "Estudando Angular",
-      "autoria": "pH",
+      "conteudo": "Testando função de editar",
+      "autoria": "Dev Angular =)",
       "modelo": "modelo2"
     },
     {
@@ -17,6 +17,12 @@
       "conteudo": "Angular é demais",
       "autoria": "pH",
       "modelo": "modelo3"
+    },
+    {
+      "conteudo": "Gabriela, bora sair?",
+      "autoria": "Philippe",
+      "modelo": "modelo2",
+      "id": 4
     }
   ]
 }
