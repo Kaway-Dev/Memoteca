@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Pensamento } from '../pensamento';
 import { PensamentoService } from '../pensamento.service';
 import { Router } from '@angular/router';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -16,12 +17,20 @@ export class CriarPensamentoComponent implements OnInit {
     modelo: 'modelo1'
   }
 
+  fomulario!: FormGroup;
+
   constructor(
     private service: PensamentoService,
-    private router: Router
+    private router: Router,
+    private FormBuilder: FormBuilder
   ) { }
 
   ngOnInit(): void {
+    this.fomulario = this.FormBuilder.group({
+      conteudo: ['Formulário Reativo'],
+      autoria: [''],
+      modelo: ['modelo1']
+    });
   }
 
   criarPensamento() {
